@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 1000px;
 }
 
 .container {    
@@ -20,6 +21,7 @@ body {
 }
 
 .card {
+    transform-style: preserve-3d;
     min-height: 80vh;
     width: 35rem;
     border-radius: 30px;
@@ -37,6 +39,7 @@ body {
 .movie img {
     width: 10rem;
     z-index: 2;
+    transition: all 0.75s ease-out;
 }
 
 .circle {
@@ -54,6 +57,7 @@ body {
 
 .info h1 {
     font-size: 3rem;
+    transition: all 0.75s ease-out;
 }
 
 .info h3 {
@@ -61,11 +65,13 @@ body {
     padding: 2rem 0rem;
     color: #585858;
     font-weight: lighter;
+    transition: all 0.75s ease-out;
 }
 
 .ratings {
     display: flex;
     justify-content: space-between;
+    transition: all 0.75s ease-out;
 }
 
 .ratings button {
@@ -77,6 +83,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     color: #585858;
+    transition: all 0.75s ease-out;
 }
 
 button.active {
@@ -86,6 +93,7 @@ button.active {
 
 .purchase {
     margin-top: 5rem;
+    transition: all 0.75s ease-out;
 }
 
 .purchase button {
@@ -96,5 +104,5 @@ button.active {
     border-radius: 35px;
     color: whitesmoke;
     font-size: 1.5rem;
-    background-color: #f54642;
+    background: #f54642;
 }
